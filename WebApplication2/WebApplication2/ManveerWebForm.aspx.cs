@@ -11,7 +11,17 @@ namespace WebApplication2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (|Page.IsPostBack)
+            {
+                ltMessage.Text = "Welcome to the Manveer.ca : Solution to your all Problems";
+            }
+        }
 
+        protected void btnsubmit_Click(object sender, EventArgs e)
+        {
+            string email = txtEmail.Text;
+            //TODO  Validate email and save to data storage
+            ltMessage.Text = "You are now on our email list";
         }
     }
 }

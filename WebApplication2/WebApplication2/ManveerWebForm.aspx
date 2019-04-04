@@ -9,13 +9,18 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h1> Newsletter Signup<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></h1>
+            <h1> Newsletter Signup</h1>
+            <p>
+                <asp:Literal ID="ltMessage" runat="server"></asp:Literal>
+            </p>
             <p>
                 Email Peter<asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
             </p>
         </div>
         <p>
-            <asp:Button ID="Button1" runat="server" Text="Submit" />
+            
+            <asp:Button  ID="btnsubmit" runat="server" Text="Submit" OnClick="btnsubmit_Click" />
+            
         </p>
     </form>
 </body>
